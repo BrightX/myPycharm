@@ -1,0 +1,68 @@
+.btn{
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom-color: #2d78f4;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    outline-color: currentcolor;
+    outline-style: none;
+    outline-width: medium;
+    cursor: pointer;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: 0px;
+}
+.text{
+    width: 520px;
+    height: 28px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: arial;
+    font-size-adjust: none;
+    font-kerning: auto;
+    font-variant-alternates: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-language-override: normal;
+    font-feature-settings: normal;
+    line-height: 28px;
+}
+.image{
+    width: 153px;
+    height: 37px;
+    margin:40px auto 20px auto;
+    background-image: url("../static/kugou.png");
+}
+
+.downdiv{
+    width: 100%;
+    margin: 250px 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.downdiv ul li {
+    list-style-type:none;
+    padding: 10px;
+}
+.smdiv{
+    width:100%;
+    font-size: 13px;
+    text-align: center;
+    color: red;
+}

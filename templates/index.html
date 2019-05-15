@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>酷狗音乐--就是歌多</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+<div class="image">
+</div>
+<form action="/" ,method="POST">
+<table style="margin: 0 auto">
+    <tr>
+        <td>输入歌曲名称(歌手):</td>
+        <td><input class="text" type="text" name="song_input"></td>
+        <td><input class="btn" value="搜索" type="submit"></td>
+    </tr>
+</table>
+</form>
+<table style="margin: 0 auto" width="900px">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>歌曲名称</th>
+        <th>专辑</th>
+        <th>时长</th>
+        <th>试听</th>
+        <th>下载</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for song in context %}
+        <tr>
+        <td align="center">{{ song.0 }}.</td>
+        <td align="left">{{ song.1 }}</td>
+        <td>{{ song.2 }}</td>
+        <td>{{ song.3 }}</td>
+        <td><a target="_blank" href="http://www.kugou.com/song/#hash={{ song.4 }}&album_id={{ song.5 }}">试听</a></td>
+        <td><a target="_blank" href="./parase_url?hash={{ song.4 }}&id={{ song.5 }}&title={{ song.1 }}">下载</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

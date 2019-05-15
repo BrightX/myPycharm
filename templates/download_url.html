@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>下载</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+
+<body>
+<div class="downdiv">
+<ul>
+<li>歌曲名称：{{ context.0 }}</li>
+<li><a href="{{ context.1 }}" download="{{ context.0 }}" style="text-decoration: none">
+    <input class="btn" value="点击下载" type="submit">
+</a>
+</li>
+</ul>
+</div>
+<div class="smdiv">
+1.不支持IE浏览器下载
+2.火狐、谷歌浏览器点击下载后可能会直接打开歌曲链接不会自动下载，请复制链接手动下载即可
+</div>
+</body>
+</html>
