@@ -14,11 +14,12 @@ def ku_zhu():
 
 @app.route('/parase_url')
 def parase_url():
-    hashs = request.args.get('hash')
+    hash = request.args.get('hash')
     id = request.args.get('id')
+
     title = request.args.get('title')
     md = MusicDownload()
-    download_url = md.download_url(hashs, id)
+    download_url = md.download_url(hash, id)
     return render_template("download_url.html", context=(title, download_url))
 
 
